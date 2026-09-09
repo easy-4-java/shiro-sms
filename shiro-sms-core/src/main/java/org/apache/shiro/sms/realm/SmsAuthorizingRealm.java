@@ -1,5 +1,6 @@
 package org.apache.shiro.sms.realm;
 
+import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.biz.realm.AbstractAuthorizingRealm;
 import org.apache.shiro.sms.token.SmsLoginToken;
 
@@ -16,7 +17,7 @@ public class SmsAuthorizingRealm extends AbstractAuthorizingRealm {
 	 *
 	 * @return the authentication token class
 	 */
-	public Class<?> getAuthenticationTokenClass() {
+	public Class<? extends AuthenticationToken> getAuthenticationTokenClass() {
 		return SmsLoginToken.class;// 此Realm只支持SmsLoginToken
 	}
 

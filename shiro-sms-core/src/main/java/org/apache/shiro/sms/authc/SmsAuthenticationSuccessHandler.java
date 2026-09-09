@@ -28,9 +28,9 @@ import org.apache.shiro.biz.authz.principal.ShiroPrincipal;
 import org.apache.shiro.biz.utils.SubjectUtils;
 import org.apache.shiro.web.util.WebUtils;
 import org.apache.shiro.biz.web.servlet.http.HttpStatus;
-import org.apache.shiro.sms.spring.jwt.JwtPayloadRepository;
+import org.apache.shiro.jwt.JwtPayloadRepository;
 import org.apache.shiro.sms.token.SmsLoginToken;
-import org.apache.shiro.sms.spring.utils.SubjectJwtUtils;
+import org.apache.shiro.utils.SubjectJwtUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.http.MediaType;
 
