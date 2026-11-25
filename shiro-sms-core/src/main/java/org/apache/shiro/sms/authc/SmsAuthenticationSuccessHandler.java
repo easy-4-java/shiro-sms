@@ -19,8 +19,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
 
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.biz.authc.AuthenticationSuccessHandler;
@@ -28,9 +28,9 @@ import org.apache.shiro.biz.authz.principal.ShiroPrincipal;
 import org.apache.shiro.biz.utils.SubjectUtils;
 import org.apache.shiro.web.util.WebUtils;
 import org.apache.shiro.biz.web.servlet.http.HttpStatus;
-import org.apache.shiro.sms.spring.jwt.JwtPayloadRepository;
+import org.apache.shiro.spring.boot.jwt.JwtPayloadRepository;
 import org.apache.shiro.sms.token.SmsLoginToken;
-import org.apache.shiro.sms.spring.utils.SubjectJwtUtils;
+import org.apache.shiro.spring.boot.utils.SubjectJwtUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.http.MediaType;
 
